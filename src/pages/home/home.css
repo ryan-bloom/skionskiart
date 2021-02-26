@@ -25,7 +25,7 @@
   height: 65vh;
   z-index: 1;
   opacity: 0.4;
-  background-image: url(../images/helmetBkgrnd.PNG);
+  background-image: url(../../images/helmetBkgrnd.PNG);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -74,7 +74,7 @@
 
 .paralax-image-2 {
   min-height: 40rem;
-  background-image: url(../images/saigeBkgrnd.PNG);
+  background-image: url(../../images/saigeBkgrnd.PNG);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -132,7 +132,7 @@
 
 .paralax-image-3 {
   min-height: 40rem;
-  background-image: url(../images/moutainBkgrnd.jpg);
+  background-image: url(../../images/moutainBkgrnd.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

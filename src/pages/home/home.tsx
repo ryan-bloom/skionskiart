@@ -2,7 +2,7 @@ import React from 'react';
 import {Link} from 'react-scroll';
 import './home.css'
 
-export const Home = ()=>{
+export const Home = () =>{
     const aboutMessage:string = 'As a die-hard ski junkie with a passion for art and a year long struggle to find a pair of skis with a graphic that I loved, I decided to take matters into my own hands. I painted my first pair of skis for myself, then a couple for my friends, and Ski-On Ski-Art was born. One of a kind, custom, hand-painted skis and boards designed with you and guaranteed to turn heads on the slopes. Reach out to talk about customizing yours today!';
     
     const spaceMan = './images/spaceMan.JPG';
@@ -30,15 +30,15 @@ export const Home = ()=>{
                 <div className="projects-grid">
                     <div className="project-image-area">
                         <p className="project-image-title">Space Man</p>
-                        <img className="project-image" id="space-man" src={spaceMan}/>
+                        <img className="project-image" id="space-man" src={spaceMan} alt="spaceman"/>
                     </div>
                     <div className="project-image-area">
                         <p className="project-image-title">Deep Sea</p>
-                        <img className="project-image" id="space-man" src={deepSea}/>
+                        <img className="project-image" id="space-man" src={deepSea} alt="deepsea"/>
                     </div>
                     <div className="project-image-area">
                         <p className="project-image-title">Elephant</p>
-                        <img className="project-image" id="space-man" src={elephant}/>
+                        <img className="project-image" id="space-man" src={elephant} alt="elephant"/>
                     </div>
                 </div>
             </div>
