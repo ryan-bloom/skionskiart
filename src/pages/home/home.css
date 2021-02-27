@@ -94,10 +94,12 @@
 .project-image {
   display: block;
   width: 100%;
+  margin: auto;
 }
 .project-image-area {
   position: relative;
   text-align: center;
+  display: flex;
 }
 .project-image-title {
   display: none;
@@ -115,9 +117,6 @@
 }
 .project-image-area:hover .project-image-title {
   display: block;
-}
-.project-image-area {
-  transition: all 0.5s;
 }
 .project-image-area:hover:after {
   content: "";
