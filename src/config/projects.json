@@ -1,0 +1,22 @@
+{
+    "projects":[
+        {
+            "project_id":"spaceman",
+            "project_title": "Space Man",
+            "project_image_url":"spaceMan.JPG",
+            "project_info": "RMU SCRM - 175"
+        },
+        {
+            "project_id":"deepsea",
+            "project_title":"Deep Sea",
+            "project_image_url":"deepSea.JPG",
+            "project_info": "Burton - 164"
+        },
+        {
+            "project_id":"elephant",
+            "project_title":"Elephant",
+            "project_image_url":"elephant.JPG",
+            "project_info": "Volkl Kiku - 162"
+        }
+    ]
+}

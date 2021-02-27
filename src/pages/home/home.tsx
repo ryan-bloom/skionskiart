@@ -1,18 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {Link} from 'react-scroll';
 import './home.css'
+import {withRouter} from 'react-router-dom';
+import { Routes } from '../../routes';
 
-export const Home = () =>{
-    const aboutMessage:string = 'As a die-hard ski junkie with a passion for art and a year long struggle to find a pair of skis with a graphic that I loved, I decided to take matters into my own hands. I painted my first pair of skis for myself, then a couple for my friends, and Ski-On Ski-Art was born. One of a kind, custom, hand-painted skis and boards designed with you and guaranteed to turn heads on the slopes. Reach out to talk about customizing yours today!';
+export const Home = withRouter((props) =>{
+    const aboutMessage:string = 'As a die-hard ski junkie with a passion for art and a year long struggle to find a pair of skis with a graphic that I loved, I decided to take matters into my own hands. I painted my first pair of skis and Ski-On Ski-Art was born. One of a kind, custom, hand-painted skis and boards designed with you and guaranteed to turn heads on the slopes. Reach out to talk about customizing yours today!';
     
     const spaceMan = './images/spaceMan.JPG';
     const deepSea = './images/deepSea.JPG';
     const elephant='./images/elephant.JPG';
+
+    const handleProjectSelect = (projectId:string) =>{
+        props.history.push(`${Routes.projects}?projectid=${projectId}`);
+    }
     return(
         <div className="home-page-div">
             <div className="header-div">
                 <h3 className="header-quote">
-                    Custom - Hand Painted - One of a Kind Skis &amp; Snowboards
+                    One of a Kind - Custom - Hand Painted Skis &amp; Snowboards
                 </h3>
                 <div className="header-nav-menu">
                     <button className="header-nav-button"><Link to="about" smooth={true}>about.</Link></button>
@@ -28,15 +34,15 @@ export const Home = () =>{
             <div className="projects-div" id="projects">
                 <h1 className="section-header">projects.</h1>
                 <div className="projects-grid">
-                    <div className="project-image-area">
+                    <div className="project-image-area" onClick={() => handleProjectSelect('spaceman')}>
                         <p className="project-image-title">Space Man</p>
                         <img className="project-image" id="space-man" src={spaceMan} alt="spaceman"/>
                     </div>
-                    <div className="project-image-area">
+                    <div className="project-image-area" onClick={() => handleProjectSelect('deepsea')}>
                         <p className="project-image-title">Deep Sea</p>
                         <img className="project-image" id="space-man" src={deepSea} alt="deepsea"/>
                     </div>
-                    <div className="project-image-area">
+                    <div className="project-image-area" onClick={() => handleProjectSelect('elephant')}>
                         <p className="project-image-title">Elephant</p>
                         <img className="project-image" id="space-man" src={elephant} alt="elephant"/>
                     </div>
@@ -53,4 +59,4 @@ export const Home = () =>{
             </div>
         </div>
     )
-}
+});

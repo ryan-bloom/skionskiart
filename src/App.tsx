@@ -1,14 +1,30 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import {Route} from 'react-router-dom';
 import './App.css';
 import { Home } from './pages/home/home';
+import { Projects } from './pages/projects/projects';
 import { Footer } from './partials/footer';
+import { Routes } from './routes';
 
 function App() {
   return (
-    <div className="App">
-      <Home/>
-      <Footer/>
-    </div>
+    <Router>
+      <div className="App">
+        <Route path={'/'} exact>
+          <Home/>
+          <Footer/>
+        </Route>
+        <Route path={Routes.home} exact>
+          <Home/>
+          <Footer/>
+        </Route>
+        <Route path={Routes.projects}>
+          <Projects/>
+          <Footer/>
+        </Route>
+      </div>
+    </Router>
   );
 }
 

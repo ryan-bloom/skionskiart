@@ -1,4 +1,4 @@
 export enum Routes {
-    home = '/',
-    projects='/projects/:id',
+    home = '/home',
+    projects='/projects',
 }
