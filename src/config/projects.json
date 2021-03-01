@@ -3,20 +3,26 @@
         {
             "project_id":"spaceman",
             "project_title": "Space Man",
+            "project_number": 1,
             "project_image_url":"spaceMan.JPG",
-            "project_info": "RMU SCRM - 175"
+            "project_info": "Skis. RMU SCRM-175cm",
+            "project_blurb":"This was my first project. I definitely didn't start out with this final design in mind. Originally, I wanted to paint a collage of Super Mario characters. That transitioned to painting a nebulea with Space Jam and Bugs Bunny on top and eventually led to the Space Man design that you see today. It took me about 2 months to complete and this project is what started Ski-On Ski-Art."
         },
         {
             "project_id":"deepsea",
             "project_title":"Deep Sea",
+            "project_number": 2,
             "project_image_url":"deepSeaCrop.JPG",
-            "project_info": "Burton - 164"
+            "project_info": "Board. Burton-164cm",
+            "project_blurb":"This was my first snowboard and my first paid/commissioned project. I worked closely with the customer to create the design and to come up with/tweak the details along the way. The whale was re-painted about 4 times before we came to this final design. This project took me about a month to complete."
         },
         {
             "project_id":"elephant",
             "project_title":"Elephant",
+            "project_number": 3,
             "project_image_url":"elephant.JPG",
-            "project_info": "Volkl Kiku - 162"
+            "project_info": "Skis. Volkl Kiku-162cm",
+            "project_blurb":"I completed this project with one request from the customer, 'lots of color'. Unlike the DeepSea snowboard, I did not correspond with this customer during the project. The Elephant project took me about a month to complete."
         }
     ]
 }

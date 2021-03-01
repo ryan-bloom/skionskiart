@@ -4,5 +4,98 @@
 }
 
 .project-page-image {
+  width: 100%;
+}
+.home-logo:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.25s;
+}
+.projects-header-div {
+  display: flex;
+  height: 6.5rem;
+  top: 0;
+  position: sticky;
+  box-shadow: 0px 5px 15px -5px #747474;
+  background-color: white;
+  z-index: 2;
+}
+@media only screen and (max-width: 703px) {
+  .projects-header-div {
+    height: 10rem;
+  }
+}
+.home-logo {
+  position: absolue;
+  width: 75px;
+  height: 75px;
+  padding: 1rem;
+}
+.projects-header-nav-menu {
+  display: block;
+  margin: auto;
+}
+.projects-header-nav-button {
+  margin-left: 4rem;
+  margin-right: 4rem;
+  font-size: 40px;
+  font-weight: 300;
+  background: none;
+  border: none;
+  font-family: "Allerta Stencil";
+  transition: 0.3s;
+  border: none !important;
+  outline: none !important;
+}
+.projects-header-nav-button:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.project-page-body {
+  display: flex;
+  padding: 2rem;
+}
+
+.project-page-info {
+  display: block;
+  text-align: left;
+  padding-left: 3rem;
   width: 50%;
+}
+
+.project-page-info .project-title {
+  display: block;
+  margin-left: 0px;
+  font-size: 50px;
+  font-weight: 200;
+  font-family: "Allerta Stencil";
+}
+
+.project-page-info .project-info {
+  font-family: monospace;
+  font-size: 30px;
+}
+.project-page-info .project-blurb {
+  font-size: 18px;
+  font-family: monospace;
+}
+
+.project-nav-image {
+  width: 125px;
+  box-shadow: 0px 0px 10px 1px #535353;
+  margin: 1rem;
+  transition: 0.25s;
+}
+
+.project-nav-image:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.project-page-sideNav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-right: 4rem;
 }

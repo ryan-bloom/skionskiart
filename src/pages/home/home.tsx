@@ -5,6 +5,7 @@ import {withRouter} from 'react-router-dom';
 import { Routes } from '../../routes';
 
 export const Home = withRouter((props) =>{
+    const urlHash = props.history.location.hash;
     const aboutMessage:string = 'As a die-hard ski junkie with a passion for art and a year long struggle to find a pair of skis with a graphic that I loved, I decided to take matters into my own hands. I painted my first pair of skis and Ski-On Ski-Art was born. One of a kind, custom, hand-painted skis and boards designed with you and guaranteed to turn heads on the slopes. Reach out to talk about customizing yours today!';
     
     const spaceMan = './images/spaceMan.JPG';
@@ -14,9 +15,16 @@ export const Home = withRouter((props) =>{
     const handleProjectSelect = (projectId:string) =>{
         props.history.push(`${Routes.projects}?projectid=${projectId}`);
     }
+    useEffect(()=>{
+        if(urlHash.length > 0){
+            document.getElementById(urlHash.substr(1,urlHash.length-1))?.scrollIntoView();
+        }
+    },[])
+
     return(
         <div className="home-page-div">
             <div className="header-div">
+                <p className="header-title">Ski-On Ski-Art</p>
                 <h3 className="header-quote">
                     One of a Kind - Custom - Hand Painted Skis &amp; Snowboards
                 </h3>
