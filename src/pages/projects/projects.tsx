@@ -58,7 +58,7 @@ export const Projects = withRouter((props) =>{
                         <p className="project-info">{`${selectedProject?.project_info}`}</p>
                         <p className="project-blurb">{selectedProject?.project_blurb}</p>
                     </div>
-                    <img className="project-page-image" src={projectImage}/>
+                    <img className="project-page-image" src={projectImage} alt={`${selectedProject?.project_title}`}/>
                 </div>
             </div>
         </div>

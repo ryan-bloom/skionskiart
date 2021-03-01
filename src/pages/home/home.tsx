@@ -19,7 +19,7 @@ export const Home = withRouter((props) =>{
         if(urlHash.length > 0){
             document.getElementById(urlHash.substr(1,urlHash.length-1))?.scrollIntoView();
         }
-    },[])
+    },[urlHash]);
 
     return(
         <div className="home-page-div">
