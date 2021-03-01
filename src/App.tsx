@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Router, Redirect } from 'react-router-dom';
 import {Route} from 'react-router-dom';
 import './App.css';
 import { Home } from './pages/home/home';
@@ -14,6 +14,9 @@ function App() {
         <Route path={'/'} exact>
           <Home/>
           <Footer/>
+        </Route>
+        <Route path={Routes.homepage}>
+          <Redirect to={Routes.home} />
         </Route>
         <Route path={Routes.home} exact>
           <Home/>
