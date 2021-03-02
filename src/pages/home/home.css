@@ -115,7 +115,6 @@
   position: relative;
   text-align: center;
   display: flex;
-  height: auto;
 }
 .project-image-title {
   display: none;
@@ -191,7 +190,7 @@ a {
   }
   .paralax-image-2,
   .paralax-image-3 {
-    min-height: 12rem;
+    min-height: 25vh !important;
     background-size: auto;
   }
   .contact-info,
@@ -206,5 +205,9 @@ a {
   }
   .projects-grid {
     flex-direction: column;
+  }
+  .project-image-area {
+    height: fit-content;
+    max-height: 90vh;
   }
 }
