@@ -190,7 +190,6 @@ a {
   }
   .paralax-image-2,
   .paralax-image-3 {
-    min-height: 25vh !important;
     background-size: auto;
   }
   .contact-info,
@@ -208,6 +207,6 @@ a {
   }
   .project-image-area {
     height: fit-content;
-    max-height: 90vh;
+    max-height: 75vh;
   }
 }
