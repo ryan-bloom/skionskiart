@@ -5,7 +5,7 @@ export const Footer = ()=>{
     }
     return(
         <div className="footer-div">
-            Copywright &copy;{` ${getYear()} | Ski-On Ski-Art`}&trade; | Ryan Bloom
+            Copyright &copy;{` ${getYear()} | Ski-On Ski-Art`}&trade; | Ryan Bloom
         </div>
     )
 }
