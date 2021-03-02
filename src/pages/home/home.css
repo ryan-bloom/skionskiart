@@ -153,6 +153,10 @@
   background-attachment: fixed;
 }
 
+.contact-div {
+  padding-bottom: 2rem;
+}
+
 .contact-info,
 .contact-blurb {
   font-size: 25px;
@@ -165,7 +169,10 @@
 }
 a {
   color: black;
-  padding: 2rem;
+  padding: 1rem;
+}
+.contact-info-p {
+  margin: 0.5rem;
 }
 hr {
   width: 15%;

@@ -39,7 +39,7 @@ export const Home = withRouter((props) =>{
                 <h1 className="section-header">about.</h1>
                 <p className="section-content">{aboutMessage} <Link className="in-text-link" to="contact" smooth={true}>Reach out</Link> to customize yours today!</p>
                 <hr/>
-                <p className="section-content">{missionMessage} Click <a className="in-text-link" href="https://www.nrdc.org/" target="blank">here</a> to learn more about the NRDC and it's mission!</p>
+                <p className="section-content">{missionMessage} Click <a className="in-text-link" href="https://www.nrdc.org/" target="_blank">here</a> to learn more about the NRDC and it's mission!</p>
             </div>
             <div className="paralax-image-2"></div>
             <div className="projects-div" id="projects">
@@ -64,8 +64,9 @@ export const Home = withRouter((props) =>{
                 <h1 className="section-header">contact.</h1>
                 <h2 className="contact-blurb">Reach out via email or instagram to customize your skis/board today!</h2>
                 <div className="contact-info">
-                    <a className="email-link" href={`mailto: skionskiart@gmail.com`}>Email: skionskiart@gmail.com</a>
-                    <a className="instagram-link" href="https://www.instagram.com/skionskiart" target="_blank">Instagram: @skionskiart</a>
+                    <p className="contact-info-p">Email:<a className="email-link" href={`mailto: skionskiart@gmail.com`}>skionskiart@gmail.com</a></p>
+                    <p className="contact-info-p">Instagram:<a className="instagram-link" href="https://www.instagram.com/skionskiart" target="_blank">@skionskiart</a></p>
+                    <p className="contact-info-p"><a className="stickers-order-form" href="https://forms.gle/Uhvib7Ct3ZYXPZTE9" target="_blank">Click here to get your Ski-On Ski-Art stickers!</a></p>
                 </div>
             </div>
         </div>
