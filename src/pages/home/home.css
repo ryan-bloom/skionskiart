@@ -189,6 +189,9 @@ a {
   .header-nav-button {
     font-size: 35px;
   }
+  .about-div {
+    padding-bottom: 1rem;
+  }
   .paralax-image-2,
   .paralax-image-3 {
     display: none;
@@ -207,7 +210,7 @@ a {
     flex-direction: column;
   }
   .project-image-area {
-    height: fit-content;
-    max-height: 65vh !important;
+    height: min-content;
+    max-height: 50vh !important;
   }
 }
