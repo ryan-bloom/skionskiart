@@ -99,3 +99,38 @@
   padding-top: 2rem;
   padding-right: 4rem;
 }
+
+@media only screen and (max-width: 400px) {
+  .project-page-sideNav {
+    display: none;
+  }
+  .project-page-body {
+    padding: 0;
+  }
+  .project-page-info {
+    width: 80%;
+  }
+  .project-page-info .project-info {
+    font-size: 20px;
+  }
+  .project-page-info .project-title {
+    font-size: 25px;
+  }
+  .projects-header-nav-button {
+    margin-right: 0;
+    font-size: 30px;
+  }
+  .projects-header-nav-menu {
+    text-align: right;
+    margin: 0;
+  }
+  .project-page-info .project-blurb {
+    font-size: 15px;
+  }
+  .projects-header-div {
+    height: 8rem;
+  }
+  .home-logo {
+    margin: auto;
+  }
+}
