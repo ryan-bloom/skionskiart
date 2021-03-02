@@ -115,6 +115,7 @@
   position: relative;
   text-align: center;
   display: flex;
+  height: auto;
 }
 .project-image-title {
   display: none;
@@ -181,13 +182,17 @@ a {
   .header-div:before {
     width: 100%;
     height: 45vh;
+    background-image: url(../../images/mobileHeaderImg.jpg);
+    background-size: contain;
+    background-position: inherit;
   }
   .header-nav-button {
     font-size: 35px;
   }
   .paralax-image-2,
   .paralax-image-3 {
-    min-height: 10rem;
+    min-height: 12rem;
+    background-size: auto;
   }
   .contact-info,
   .contact-blurb {
