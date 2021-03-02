@@ -7,7 +7,7 @@ import { Routes } from '../../routes';
 export const Home = withRouter((props) =>{
     const urlHash = props.history.location.hash;
     const aboutMessage:string = 'As a die-hard ski junkie with a passion for art and a year long struggle to find a pair of skis with a graphic that I loved, I decided to take matters into my own hands. I painted my first pair of skis and Ski-On Ski-Art was born. One-of-a-kind, custom, hand-painted skis and boards guaranteed to turn heads on the slopes.';
-    const missionMessage:string= 'Our climate has quickly become another passion of mine. With climate change becoming more and more dangerous, our ski seasons are at greater risk than ever before. To help protect our environment and our ski seasons, Ski-On Ski-Art is donating 10% of all profits made from commissioned work to the NRDC (National Resource Defense Council).';
+    const missionMessage:string= 'Our climate has quickly become another passion of mine. With climate change growing more and more dangerous, our ski seasons are at greater risk than ever before. To help protect our environment and our ski seasons, Ski-On Ski-Art is donating 10% of all profits made from commissioned work to the NRDC (National Resource Defense Council).';
 
     const spaceMan = './images/spaceMan.JPG';
     const deepSea = './images/deepSea.JPG';
