@@ -177,6 +177,7 @@ a {
   }
   .header-div .header-title {
     font-size: 45px;
+    margin-top: 0rem;
   }
   .header-div:before {
     width: 100%;
@@ -190,7 +191,7 @@ a {
   }
   .paralax-image-2,
   .paralax-image-3 {
-    background-size: auto;
+    display: none;
   }
   .contact-info,
   .contact-blurb {
@@ -207,6 +208,6 @@ a {
   }
   .project-image-area {
     height: fit-content;
-    max-height: 75vh;
+    max-height: 65vh !important;
   }
 }
