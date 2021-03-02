@@ -146,11 +146,15 @@
 
 .paralax-image-3 {
   min-height: 40rem;
-  background-image: url(../../images/moutainBkgrnd.jpg);
+  background-image: url(../../images/moutainBkgrnd2.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+}
+
+.contact-div {
+  padding-bottom: 2rem;
 }
 
 .contact-info,
@@ -165,9 +169,24 @@
 }
 a {
   color: black;
-  padding: 2rem;
+  padding: 1rem;
 }
-
+.contact-info-p {
+  margin: 0.5rem;
+}
+hr {
+  width: 15%;
+  height: 2px;
+  background: black;
+  border: none;
+}
+.in-text-link {
+  padding: 0;
+  text-decoration: underline;
+}
+.in-text-link:hover {
+  cursor: pointer;
+}
 @media only screen and (max-width: 479px) {
   .header-div {
     min-height: 45vh;
