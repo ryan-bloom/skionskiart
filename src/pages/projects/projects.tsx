@@ -63,6 +63,7 @@ export const Projects = withRouter((props) =>{
                             imageSrc={projectImage}
                             imageAlt={`${selectedProject?.project_title}`}
                             largeImageSrc={projectImage}
+                            cursorStyle={'default'}
                         />
                     </div>
                     <div className="mobile-image">
