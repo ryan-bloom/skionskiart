@@ -3,6 +3,7 @@ import {useLocation, withRouter} from 'react-router-dom';
 import projects from '../../config/projects.json';
 import { Routes } from '../../routes';
 import { useEffect } from 'react';
+import { GlassMagnifier } from "react-image-magnifiers";
 
 interface projectMeta {
     project_id:string,
@@ -57,7 +58,16 @@ export const Projects = withRouter((props) =>{
                         <h2 className="project-title">{`${selectedProject?.project_title}. project ${selectedProject?.project_number}`}</h2>
                         <p className="project-info">{`${selectedProject?.project_info}`}</p>
                     </div>
-                    <img className="project-page-image" src={projectImage} alt={`${selectedProject?.project_title}`}/>
+                    <div className="magnifying-image">
+                        <GlassMagnifier
+                            imageSrc={projectImage}
+                            imageAlt={`${selectedProject?.project_title}`}
+                            largeImageSrc={projectImage}
+                        />
+                    </div>
+                    <div className="mobile-image">
+                        <img className="project-page-image" src={projectImage} alt={`${selectedProject?.project_title}`}/>
+                    </div>
                 </div>
             </div>
         </div>
