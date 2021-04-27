@@ -52,7 +52,7 @@ export const Projects = withRouter((props) =>{
                     <img onClick={() => handleSideNavClick('spaceman')} src="../../images/bw_spaceMan.PNG" alt="spaceman-nav" className="project-nav-image"/>
                     <img onClick={() => handleSideNavClick('deepsea')} src="../../images/bw_deepSea.PNG" alt="deepsea-nav" className="project-nav-image"/>
                     <img onClick={() => handleSideNavClick('elephant')} src="../../images/bw_elephant.PNG" alt="elephant-nav" className="project-nav-image"/>
-                    <img onClick={() => handleSideNavClick('kicksinorbit')} src="../../images/bw_kicksinorbit.PNG" alt="kicksinorbit-nav" className="project-nav-image"/>
+                    <img onClick={() => handleSideNavClick('kicksinorbit')} src="../../images/bw_kicksinorbit.JPG" alt="kicksinorbit-nav" className="project-nav-image"/>
                 </div>
                 <div className="projects-page-content-div">
                     <div className="project-page-info">
