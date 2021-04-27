@@ -23,6 +23,14 @@
             "project_image_url":"elephant.JPG",
             "project_info": "Skis. Volkl Kiku-162cm",
             "project_blurb":"I completed this project with one request from the customer, 'lots of color'. Unlike the Deep Sea snowboard, I did not correspond with this customer during the project. Knowing that she had a fondness for elephants, I decided to paint this pop art design. The Elephant project took me about a month to complete."
+        },
+        {
+            "project_id":"kicksinorbit",
+            "project_title":"KicksInOrbit",
+            "project_number": 4,
+            "project_image_url":"kicksInOrbit.JPG",
+            "project_info": "Board. Lotus-149cm",
+            "project_blurb":""
         }
     ]
 }

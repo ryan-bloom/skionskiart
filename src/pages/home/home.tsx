@@ -12,6 +12,7 @@ export const Home = withRouter((props) =>{
     const spaceMan = './images/spaceMan.JPG';
     const deepSea = './images/deepSea.JPG';
     const elephant='./images/elephant.JPG';
+    const kicksinorbit='./images/kicksInOrbit.JPG';
 
     const handleProjectSelect = (projectId:string) =>{
         props.history.push(`${Routes.projects}?projectid=${projectId}`);
@@ -51,11 +52,15 @@ export const Home = withRouter((props) =>{
                     </div>
                     <div className="project-image-area" onClick={() => handleProjectSelect('deepsea')}>
                         <p className="project-image-title">Deep Sea</p>
-                        <img className="project-image" id="space-man" src={deepSea} alt="deepsea"/>
+                        <img className="project-image" id="deep-sea" src={deepSea} alt="deepsea"/>
                     </div>
                     <div className="project-image-area" onClick={() => handleProjectSelect('elephant')}>
                         <p className="project-image-title">Elephant</p>
-                        <img className="project-image" id="space-man" src={elephant} alt="elephant"/>
+                        <img className="project-image" id="elephant" src={elephant} alt="elephant"/>
+                    </div>
+                    <div className="project-image-area" onClick={() => handleProjectSelect('kicksinorbit')}>
+                        <p className="project-image-title">Kicks in Orbit</p>
+                        <img className="project-image" id="kicks-in-orbit" src={kicksinorbit} alt="kicksinorbit"/>
                     </div>
                 </div>
             </div>
